@@ -427,3 +427,97 @@ html {
     }
   }
 
+/* Responsive Design - Mobile First Approach */
+/* Small screens (mobile) */
+@media (max-width: 576px) {
+  #nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #nav .logo {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  #nav nav {
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #nav nav a {
+    padding: 8px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .section-image {
+    height: 250px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 991px) {
+  #nav {
+    padding: 10px 15px;
+  }
+
+  #nav nav {
+    gap: 10px;
+  }
+
+  #nav nav a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .section-image {
+    height: 350px;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+  .section-content {
+    gap: 50px;
+  }
+
+  .section-image {
+    height: 450px;
+  }
+}
+
+/* For ultra-wide screens */
+@media (min-width: 1400px) {
+  .section-page {
+    padding: 100px 10%;
+  }
+
+  .section-content {
+    max-width: 1600px;
+  }
+}
+
+/* Fix for mobile landscape mode */
+@media (max-height: 500px) and (orientation: landscape) {
+  .landing {
+    padding: 100px 5% 50px;
+  }
+
+  .section-page {
+    padding: 50px 5%;
+  }
+
+  .section-image {
+    height: 200px;
+  }
+}
